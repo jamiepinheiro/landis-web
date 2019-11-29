@@ -7,7 +7,7 @@
             <b-spinner label="Spinning"></b-spinner>
         </div>
         <div>
-            <AccountPreview v-for="account in accounts" v-bind:key="account.token"/>
+            <AccountPreview v-for="account in accounts" v-bind:key="account.token" :account='account'/>
         </div>
     </div>
 </template>
@@ -15,8 +15,14 @@
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator';
 import axios from 'axios';
+import AccountPreview from './AccountPreview.vue';
+import Account from '../models/Account';
 
-@Component({})
+@Component({
+    components: {
+        AccountPreview
+    }
+})
 
 export default class AllAccounts extends Vue {
     private loading: boolean = true;

@@ -1,4 +1,4 @@
-export interface Account {
+export default interface Account {
     active: boolean;
     address: string;
     balance: string;

@@ -2,7 +2,7 @@
   <div class='text-center'>
         <b-tabs content-class='mt-3 mx-auto' fill>
             <b-tab title='All Accounts' active>
-                <AllAccounts/>
+                <AllAccounts class='p-1'/>
             </b-tab>
             <b-tab title='Charts'>
                 <Charts/>
