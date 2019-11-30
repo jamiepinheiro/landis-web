@@ -12,8 +12,10 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.4.3",
+    "echarts": "^4.5.0",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
+    "vue-echarts": "^4.0.4",
     "vue-property-decorator": "^8.3.0"
   },
   "devDependencies": {

@@ -17,12 +17,16 @@ import Account from '../models/Account';
 
 export default class AccountPreview extends Vue {
     @Prop({type: Object as () => Account})
-    public account!: Account;
+    public account!: Account; 
+    
+    private score: number = 0;
 
-    // Fancy formula for accounts score
-    get score(): number {
-        return this.account.credit / 800;
+    created() {
+        // Animate the movement
+        window.setTimeout(() => this.score = this.account.credit / 800);
     }
+
+
 }
 </script>
 

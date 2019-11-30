@@ -7,10 +7,10 @@
             <b-spinner class='mt-5' label='Spinning'></b-spinner>
         </div>
         <b-tabs v-else content-class='mt-3 mx-auto' fill>
-            <b-tab title='All Accounts' active>
+            <b-tab lazy title='All Accounts' active>
                 <AllAccounts :accounts='accounts'/>
             </b-tab>
-            <b-tab title='Charts'>
+            <b-tab lazy title='Charts'>
                 <Charts :accounts='accounts'/>
             </b-tab>
         </b-tabs>
