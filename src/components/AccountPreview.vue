@@ -25,8 +25,6 @@ export default class AccountPreview extends Vue {
         // Animate the movement
         window.setTimeout(() => this.score = this.account.credit / 800);
     }
-
-
 }
 </script>
 
